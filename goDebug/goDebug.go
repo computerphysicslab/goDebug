@@ -21,9 +21,9 @@ func interface2string(i interface{}) string {
 
 func print_static(s string, i interface{}) {
 	pretty := interface2string(i)
-	fmt.Printf("\nmyDebug: %s (%s) => %s\n", s, reflect.TypeOf(i).String(), string(pretty))
-	// fmt.Printf("\n\nmyDebug: %s RAW => %s", s, i)
-	// fmt.Printf("\n\nmyDebugPlain: %+v\n", i)
+	fmt.Printf("\ngoDebug: %s (%s) => %s\n", s, reflect.TypeOf(i).String(), string(pretty))
+	// fmt.Printf("\n\ngoDebug: %s RAW => %s", s, i)
+	// fmt.Printf("\n\ngoDebugPlain: %+v\n", i)
 }
 
 // Debugging function to show a data structure w/ pretty style
